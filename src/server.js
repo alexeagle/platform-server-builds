@@ -106,6 +106,7 @@ export const /** @type {?} */ SERVER_RENDER_PROVIDERS = [
 /**
  * The ng module for the server.
  *
+ * \@experimental
  */
 export class ServerModule {
 }

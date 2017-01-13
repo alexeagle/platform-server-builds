@@ -209,6 +209,7 @@
     /**
      * A `DomAdapter` powered by the `parse5` NodeJS module.
      *
+     * \@security Tread carefully! Interacting with the DOM directly is dangerous and
      * can introduce XSS risks.
      */
     var Parse5DomAdapter = (function (_super) {
@@ -853,6 +854,7 @@
             return styleValue ? value == styleValue : value.length > 0;
         };
         /**
+         * \@internal
          * @param {?} element
          * @return {?}
          */
@@ -872,6 +874,7 @@
             return styleMap;
         };
         /**
+         * \@internal
          * @param {?} element
          * @param {?} styleMap
          * @return {?}
@@ -1105,6 +1108,7 @@
             }
         };
         /**
+         * \@internal
          * @param {?} parsedRules
          * @param {?=} css
          * @return {?}
@@ -1940,6 +1944,7 @@
     /**
      * The ng module for the server.
      *
+     * \@experimental
      */
     var ServerModule = (function () {
         function ServerModule() {

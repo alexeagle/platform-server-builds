@@ -29,6 +29,7 @@ function _notImplemented(methodName) {
 /**
  * A `DomAdapter` powered by the `parse5` NodeJS module.
  *
+ * \@security Tread carefully! Interacting with the DOM directly is dangerous and
  * can introduce XSS risks.
  */
 export class Parse5DomAdapter extends DomAdapter {
@@ -659,6 +660,7 @@ export class Parse5DomAdapter extends DomAdapter {
         return styleValue ? value == styleValue : value.length > 0;
     }
     /**
+     * \@internal
      * @param {?} element
      * @return {?}
      */
@@ -678,6 +680,7 @@ export class Parse5DomAdapter extends DomAdapter {
         return styleMap;
     }
     /**
+     * \@internal
      * @param {?} element
      * @param {?} styleMap
      * @return {?}
@@ -911,6 +914,7 @@ export class Parse5DomAdapter extends DomAdapter {
         }
     }
     /**
+     * \@internal
      * @param {?} parsedRules
      * @param {?=} css
      * @return {?}
